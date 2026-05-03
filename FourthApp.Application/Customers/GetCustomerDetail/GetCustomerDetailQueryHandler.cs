@@ -28,6 +28,7 @@ namespace FourthApp.Application.Customers.GetCustomerDetail
                           c.Orders
                               .OrderByDescending(o => o.OrderDate)
                               .Select(o => new OrderDto(
+                                  o.OrderId,
                                   o.OrderDetails.Sum(od => od.UnitPrice * od.Quantity * (1.00m - (decimal)od.Discount)),
                                   o.OrderDetails.Sum(od => od.Quantity)
                               ))

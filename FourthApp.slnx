@@ -4,4 +4,8 @@
   <Project Path="FourthApp.Application/FourthApp.Application.csproj" />
   <Project Path="FourthApp.Domain/FourthApp.Domain.csproj" />
   <Project Path="FourthApp.Infrastructure/FourthApp.Infrastructure.csproj" />
+  <Project Path="FourthApp.Web/fourthapp.web.esproj">
+    <Build />
+    <Deploy />
+  </Project>
 </Solution>

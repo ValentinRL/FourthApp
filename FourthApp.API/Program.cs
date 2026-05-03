@@ -4,7 +4,7 @@ using FourthApp.Infrastructure.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddApi();
+builder.Services.AddApi(builder.Configuration);
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddApplication();
 
@@ -23,6 +23,8 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseAuthorization();
+
+app.UseCors("Frontend");
 
 app.MapControllers();
 

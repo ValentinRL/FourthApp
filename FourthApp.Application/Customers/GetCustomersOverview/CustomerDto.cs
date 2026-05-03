@@ -4,5 +4,5 @@ using System.Text;
 
 namespace FourthApp.Application.Customers.GetCustomersOverview
 {
-    public sealed record CustomerDto(string CustomerId, string? CustomerName, int OrdersCount);
+    public sealed record CustomerDto(string CustomerId, string? CompanyName, int OrdersCount);
 }
