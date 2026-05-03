@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="FourthApp.API/FourthApp.API.csproj" />
+  <Project Path="FourthApp.Application.Tests/FourthApp.Application.Tests.csproj" Id="117edc0f-829a-415a-a136-8a2a9f617729" />
   <Project Path="FourthApp.Application/FourthApp.Application.csproj" />
   <Project Path="FourthApp.Domain/FourthApp.Domain.csproj" />
   <Project Path="FourthApp.Infrastructure/FourthApp.Infrastructure.csproj" />

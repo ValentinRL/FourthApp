@@ -1,0 +1,12 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace FourthApp.Application.Customers.GetCustomerDetail
+{
+    public sealed class OrderDto(decimal totalAmount, int totalItems)
+    {
+        public decimal TotalAmount { get; } = Math.Round(totalAmount, 2);
+        public int TotalItems { get; } = totalItems;
+    }
+}
