@@ -15,11 +15,11 @@
 
         public async Task Invoke(HttpContext context)
         {
-            _logger.LogInformation("Incoming request: {Method} {Path}", context.Request.Method, context.Request.Path);
+            _logger.LogDebug("Incoming request: {Method} {Path}", context.Request.Method, context.Request.Path);
 
             await _next(context);
 
-            _logger.LogInformation("Response: {StatusCode}", context.Response.StatusCode);
+            _logger.LogDebug("Response: {StatusCode}", context.Response.StatusCode);
         }
     }
 }
